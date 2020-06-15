@@ -26,7 +26,7 @@ public class calculateInstallments {
 	}
 	
 	public void CalculatePayment(Contract contract) {
-		for(int i = 0; i < 3; i++) {
+		for(int i = 1; i < 4; i++) {
 			contract.addPortion(payment.tax(installment, installmentsValue, i));
 		}
 	}

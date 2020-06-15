@@ -61,12 +61,12 @@ public class Contract {
 	
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
+		int i = 1;
 		for(Portion p : portions) {
-			int i = 1;
 			sb.append("#"+ i + " Installment: R$");
 			sb.append(p.getInstallments());
 			sb.append("\n");
-			i++;
+			i += 1;
 		}
 		return sb.toString();
 	}
