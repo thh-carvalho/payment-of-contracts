@@ -10,7 +10,6 @@ public class Contract {
 	private Integer number;
 	private Date date;
 	private Double amount;
-	
 	private List<Portion> portions = new ArrayList<>();
 	
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -58,6 +57,18 @@ public class Contract {
 	
 	public void removePortion(Portion portion) {
 		portions.remove(portion);
+	}
+	
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		for(Portion p : portions) {
+			int i = 1;
+			sb.append("#"+ i + " Installment: R$");
+			sb.append(p.getInstallments());
+			sb.append("\n");
+			i++;
+		}
+		return sb.toString();
 	}
 	
 	

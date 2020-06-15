@@ -29,10 +29,11 @@ public class Program {
 		System.out.println("Enter number of installments: ");
 		int numberInstalments = sc.nextInt();
 		
-		calculateInstallments calcIntall = new calculateInstallments(numberInstalments, new Paypal());
+		calculateInstallments calcInstall = new calculateInstallments(numberInstalments, new Paypal());
+		calcInstall.CalculateInstallments(contract);
+		calcInstall.CalculatePayment(contract);
 		
-		System.out.println("Installments: ");
-		System.out.println(contract.getPortion());
+		System.out.println(contract);
 	}
 
 }

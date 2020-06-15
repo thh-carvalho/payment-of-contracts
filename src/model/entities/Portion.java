@@ -4,18 +4,18 @@ import java.util.Date;
 
 public class Portion {
 	
-	private Double amount;
+	private Double installment;
 	private Date date;
 	
 	public Portion() {
 	}
 
-	public Double getAmount() {
-		return amount;
+	public Double getInstallments() {
+		return installment;
 	}
 
-	public void setAmount(Double amount) {
-		this.amount = amount;
+	public void setInstallments(Double installment) {
+		this.installment = installment;
 	}
 
 	public Date getDate() {
